@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+
+<body>
+  <p class="title">Rock Paper Scissors</p>
+
+  <button onclick="
+    playGame('Rock');
+  " class="move-button">
+    <img src="rps-images/rock-emoji.png" class="move-icon">
+  </button>
+
+  <button onclick="
+    playGame('Paper');
+  " class="move-button">
+    <img src="rps-images/paper-emoji.png" class="move-icon">
+  </button>
+
+  <button onclick="
+    playGame('Scissors');
+  " class="move-button">
+    <img src="rps-images/scissors-emoji.png" class="move-icon">
+  </button>
+
+  <p class="js-player-move player-move">
+  </p>
+
+
+  <p class="js-computer-move computer-move">
+  </p>
+
+  <p class="js-result result">
+  </p>
+
+  <p class="js-score score">
+  </p>
+
+  <p class="js-total-games total-games">
+  </p>
+
+  <button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScore();
+    totalGames();
+    reset();
+  " class="reset-button">Reset Score</button>
+
+  <script src="rock-paper-scissors.js"></script>
+</body>
+
+</html>
