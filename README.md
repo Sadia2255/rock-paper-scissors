@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 
 This is a website created using Javascript, HTML, and CSS. It is fully
-functional, and features a clean design that allows the user to play 
+functional, and features a clean design that allows the user to play multiple 
 games of rock, paper, scissors.
 
 ### Installing
