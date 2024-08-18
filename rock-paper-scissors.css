@@ -34,7 +34,8 @@ body {
   cursor: pointer;
 }
 
-.reset-button {
+.reset-button,
+.auto-play-button {
   background-color: transparent;
   color: white;
   margin-left: 20px;
@@ -44,6 +45,10 @@ body {
   border-style: solid;
   border-color: white;
   border-radius: 4px;
+}
+
+.auto-play-button {
+  margin-left: 5px;
 }
 
 .result {
