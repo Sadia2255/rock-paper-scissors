@@ -95,3 +95,27 @@ function reset() {
   document.querySelector('.js-result')
     .innerHTML = '';
 }
+
+let playing = false;
+let interval;
+
+function autoPlay() {
+  if (!playing) {
+    interval = setInterval(() => {
+      playGame(pickComputerMove());
+    }, 2000);
+    playing = true;
+  } else {
+    clearInterval(interval);
+    playing = false;
+  }
+}
+
+function toggle() {
+  buttonElement = document.querySelector('.js-auto-play-button')
+  if (buttonElement.innerText === 'Auto Play') {
+    buttonElement.innerText = 'Stop Auto Play';
+  } else {
+    buttonElement.innerText = 'Auto Play';
+  }
+}
